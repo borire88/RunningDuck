@@ -1,0 +1,1 @@
+DigitalIn.cpp:9:6:bool DigitalIn::getState()	16	static

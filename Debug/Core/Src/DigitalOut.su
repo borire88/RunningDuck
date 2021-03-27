@@ -1,0 +1,2 @@
+DigitalOut.cpp:9:6:void DigitalOut::setState(bool)	16	static
+DigitalOut.cpp:13:6:void DigitalOut::setPwm(int, int)	24	static
