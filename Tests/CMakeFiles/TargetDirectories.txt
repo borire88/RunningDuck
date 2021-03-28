@@ -1,0 +1,3 @@
+/home/irek/Projects/RunningDuck/Tests/CMakeFiles/rebuild_cache.dir
+/home/irek/Projects/RunningDuck/Tests/CMakeFiles/runTests.dir
+/home/irek/Projects/RunningDuck/Tests/CMakeFiles/edit_cache.dir

@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/irek/Projects/RunningDuck/Core/Src/DigitalIn.h
+
+/home/irek/Projects/RunningDuck/Core/Src/DigitalOut.h
+
+/home/irek/Projects/RunningDuck/Core/Src/Encoder.cpp
+Encoder.h
+/home/irek/Projects/RunningDuck/Core/Src/Encoder.h
+
+/home/irek/Projects/RunningDuck/Core/Src/Encoder.h
+DigitalIn.h
+/home/irek/Projects/RunningDuck/Core/Src/DigitalIn.h
+
+/home/irek/Projects/RunningDuck/Core/Src/MockDigitalOut.cpp
+DigitalOut.h
+/home/irek/Projects/RunningDuck/Core/Src/DigitalOut.h
+
+/home/irek/Projects/RunningDuck/Core/Src/Motor.cpp
+Motor.h
+/home/irek/Projects/RunningDuck/Core/Src/Motor.h
+math.h
+/home/irek/Projects/RunningDuck/Core/Src/math.h
+
+/home/irek/Projects/RunningDuck/Core/Src/Motor.h
+DigitalOut.h
+/home/irek/Projects/RunningDuck/Core/Src/DigitalOut.h
+
+/home/irek/Projects/RunningDuck/Tests/tests.cpp
+../Core/Src/Motor.cpp
+/home/irek/Projects/RunningDuck/Core/Src/Motor.cpp
+../Core/Src/MockDigitalOut.cpp
+/home/irek/Projects/RunningDuck/Core/Src/MockDigitalOut.cpp
+../Core/Src/Encoder.cpp
+/home/irek/Projects/RunningDuck/Core/Src/Encoder.cpp
+gtest/gtest.h
+-
+math.h
+-
+
