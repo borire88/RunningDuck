@@ -10,12 +10,9 @@
 
 class DigitalOut {
 public:
-	DigitalOut(int pin) {
-
-	};
-	void setState(bool state);
-	void setPwm(int freq, int duty);
-
+	virtual void setState(bool state) = 0;
+	virtual void setPwm(int freq, int duty) = 0;
+	virtual ~DigitalOut() {};
 };
 
 

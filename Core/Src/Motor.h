@@ -12,7 +12,7 @@
 
 class Motor {
 public:
-	Motor(int pwmPinNumber, int controlPinNumber1, int controlPinNumber2) : pwmPin(pwmPinNumber), controlPin1(controlPinNumber1), controlPin2(controlPinNumber2){
+	Motor(DigitalOut* pwmPin, DigitalOut* controlPin1, DigitalOut* controlPin2) : pwmPin(pwmPin), controlPin1(controlPin1), controlPin2(controlPin2){
 		speed = 0;
 	};
 	int getSpeed(void);
@@ -20,9 +20,9 @@ public:
 	void stop(void);
 private:
 	int speed;
-	DigitalOut pwmPin;
-	DigitalOut controlPin1;
-	DigitalOut controlPin2;
+	DigitalOut* pwmPin;
+	DigitalOut* controlPin1;
+	DigitalOut* controlPin2;
 };
 
 

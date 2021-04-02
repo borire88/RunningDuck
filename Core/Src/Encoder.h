@@ -15,13 +15,21 @@ typedef void(*encoderCallback)(unsigned int position);
 
 class Encoder {
 public:
-	Encoder (int pinA, int pinB) : pinA(pinA), pinB(pinB){};
+	Encoder(unsigned int nPositions, bool saturation, bool channelA, bool channelB) : numOfPositions(nPositions), saturate(saturation), channelA(channelA), channelB(channelB){
+		position = 0;
+	};
+	void risingEdgeA(void);
+	void fallingEdgeA(void);
+	void risingEdgeB(void);
+	void fallingEdgeB(void);
 	int getPosition(void);
 	unsigned int registerCallback(encoderCallback callback);
 private:
-	DigitalIn pinA;
-	DigitalIn pinB;
+	unsigned int numOfPositions;
 	unsigned int position;
+	bool saturate;
+	bool channelA;
+	bool channelB;
 	encoderCallback callbacks[NUM_OF_CALLBACKS];
 };
 

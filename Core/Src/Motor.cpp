@@ -14,12 +14,12 @@ int Motor::getSpeed() {
 
 void Motor::setSpeed(int speed) {
 	static const int pwmFreq = 10000;
-	DigitalOut* primaryOutPtr = &(this->controlPin1);
-	DigitalOut* secondaryOutPtr = &(this->controlPin2);
+	//DigitalOut* primaryOutPtr = &(this->controlPin1);
+	//DigitalOut* secondaryOutPtr = &(this->controlPin2);
 
 	if(speed < 0){
-		primaryOutPtr = &(this->controlPin1);
-		secondaryOutPtr = &(this->controlPin2);
+		//primaryOutPtr = &(this->controlPin1);
+		//secondaryOutPtr = &(this->controlPin2);
 	}
 
 	speed = std::abs(speed);
@@ -29,15 +29,16 @@ void Motor::setSpeed(int speed) {
 	}
 
 	if(speed == 0) {
-		primaryOutPtr->setState(false);
-		secondaryOutPtr->setState(false);
-		pwmPin.setState(true);
+		//primaryOutPtr->setState(false);
+		//secondaryOutPtr->setState(false);
+		//pwmPin.setState(true);
 	}
 	else {
-		primaryOutPtr->setState(true);
-		secondaryOutPtr->setState(false);
-		pwmPin.setPwm(pwmFreq, speed);
+		//primaryOutPtr->setState(true);
+		//secondaryOutPtr->setState(false);
+		//pwmPin.setPwm(pwmFreq, speed);
 	}
+	this->speed = speed;
 }
 
 void Motor::stop(void) {

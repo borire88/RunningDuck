@@ -6,10 +6,14 @@
  */
 #include "DigitalOut.h"
 
-void DigitalOut::setState(bool state) {
+class RealDigitalOut : public DigitalOut
+{
+    public:
+    void setState(bool state)
+    {
+    };
 
-}
-
-void DigitalOut::setPwm(int freq, int duty) {
-
+    void setPwm(int freq, int duty)
+    {
+    };
 }
